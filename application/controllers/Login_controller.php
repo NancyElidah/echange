@@ -18,7 +18,14 @@
                 $this->load->model('user_models');
                 $user = $this->user_models->loginUtilisateur($email,$pass);
                 $this->session->set_userdata('id',$user);
-                $this->load->view('templates/accueil');
+                $admin = $this->user_models->isAdmin($this->session->userdata('id'));
+                 if ($admin==0)$this->load->view('templates/accueil');
+                 else {
+                    $this->load->model('categories_models');
+                    $data=array();
+                    $data['value'] = $this->categories_models->getAllCategories();
+                    $this->load->view('templates/gestion',$data);
+                 }
             }
 	    }
     }

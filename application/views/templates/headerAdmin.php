@@ -83,32 +83,11 @@
 						</div>
 					</li>
                     <li>
-                        <a class="has-arrow ai-icon" href="<?php echo site_url('objet_controller/viewListObject');?>" aria-expanded="false">
+                        <a class="has-arrow ai-icon" href="<?php echo site_url('statistiques_controller/getStat');?>" aria-expanded="false">
                         <i class="flaticon-025-dashboard"></i>
-                        <span class="nav-text">Other objects</span>
+                        <span class="nav-text">Statistique</span>
                     </a>
                     </li>
-                    <li><a class="has-arrow ai-icon" href="<?php echo site_url('objet_controller/control_myObject');?>" aria-expanded="false">
-							<i class="flaticon-025-dashboard"></i>
-							<span class="nav-text">My Object</span>
-                        </a>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-041-graph"></i>
-							<span class="nav-text">Materiels</span>
-						</a>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-086-star"></i>
-							<span class="nav-text">Employes</span>
-						</a>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-045-heart"></i>
-							<span class="nav-text">Autres</span>
-						</a>
-                    </li>
-            
                 </ul>
 				<div class="copyright">
 					<p><strong>Takalo</strong> © 2023 All Rights Reserved</p>

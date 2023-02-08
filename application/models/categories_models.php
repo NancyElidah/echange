@@ -4,16 +4,17 @@
         public function modify_categorie($nom , $id){
             $request = 'UPDATE categories SET 
                                 nom = %s
-                       where id = %s';
-            $request = sprintf($request,$this->db->escape($nom),$this->db->escape($id));
+                       where id = %d';
+            $request = sprintf($request,$this->db->escape($nom),$id);
+            echo $request;
             $this->db->query($request);
        }
-       public function add_categoriemodify_categorie($nom , $qte , $price , $user , $categorie){
-            $request = "INSERT INTO categories values (null,'%s') ";
+       public function add_categorie($nom){
+            $request = "INSERT INTO categories values (null,%s) ";
             $request = sprintf($request,$this->db->escape($nom));
             $this->db->query($request);
        }
-       public function delete_categoriemodify_categorie($id){
+       public function delete_categorie($id){
             $request = 'DELETE FROM categories where id = %s';
             $request = sprintf($request,$this->db->escape($id));
             $this->db->query($request);

@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'echanges',
+	'hostname' => 'mysql-myproject.alwaysdata.net',
+	'username' => 'myproject_user',
+	'password' => 'wenna1234',
+	'database' => 'myproject_echanges',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
